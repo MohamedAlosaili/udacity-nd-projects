@@ -1,0 +1,28 @@
+.footer {
+    font-weight: 500;
+    text-align: center;
+    padding: 1.5rem;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 10px rgba(0 0 0 / 0.15);
+}
+
+.footer .author {
+    font-weight: 600;
+    position: relative;
+}
+
+.footer .author::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 0.15rem;
+    background-color: var(--secondary-color);
+    transition: var(--transition-time);
+}
+
+.footer .author:hover::before {
+    width: 100%;
+}
