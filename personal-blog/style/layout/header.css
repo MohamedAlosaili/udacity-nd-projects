@@ -1,0 +1,12 @@
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.header .mobile-menu {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
