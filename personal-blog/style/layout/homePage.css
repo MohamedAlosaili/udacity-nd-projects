@@ -1,0 +1,151 @@
+@import url("./newsletter.css");
+
+/* Start Landing Style */
+.landing {
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.landing .content {
+  max-width: 40rem;
+}
+
+.landing .title {
+  font-size: 2.9rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.landing .title .name {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.landing .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing .description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.landing .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.landing .image {
+  width: min(100%, 35rem);
+}
+
+@media (max-width: 991px) {
+  .landing {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .landing .btn {
+    margin: 0 auto;
+    width: 20rem;
+  }
+}
+/* End Landing Style */
+/* Start Cards Section Style */
+.card-section {
+  padding: 5rem 0;
+}
+
+.card-section .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+}
+
+.card-section .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.card-section .card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.15);
+  transition: var(--transition-time);
+}
+
+.card-section .card:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 10px 15px rgba(0 0 0 / 0.15);
+}
+
+.card-section .card .card-body {
+  padding: 1rem;
+}
+
+.card-section .card-img {
+  width: 100%;
+  aspect-ratio: 1 / 0.66;
+}
+
+.card-section .card-title {
+  margin-bottom: 1rem;
+}
+
+.card-section .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-section .reading-time {
+  display: block;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.card-section .card-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--transition-time);
+  color: var(--secondary-color);
+  cursor: inherit;
+  margin-right: 0.5rem;
+}
+
+.card-section .card-btn .icon {
+  transform: translateX(0.1rem);
+  transition: var(--transition-time);
+}
+
+.card-section .card:hover .card-btn .icon {
+  transform: translateX(0.4rem);
+}
+/* End Cards Section Style */

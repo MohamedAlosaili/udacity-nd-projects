@@ -1,35 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/main.css" />
-    <title>Mohamed Blog</title>
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <link rel="stylesheet" href="./style/layout/homePage.css">
+  <title>MOH Blog</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a href="index.html"> MOH blog </a></h1>
+      <i class="toggler fa-solid fa-bars"></i>
+      <div class="mobile-menu">
+        <nav class="navbar">
+          <a href="./index.html" class="nav-item active">Home</a>
+          <a href="#" class="nav-item">Categorises</a>
+          <a href="#" class="nav-item">New Articles</a>
+        </nav>
+        <a href="#newsletter" class="btn">Subscribe</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <div class="landing">
+        <div class="content">
+          <h2 class="title">Hi My name is <span class="name">Mohammed</span></h2>
+          <h3 class="subtitle">Welcome to the first project of the NanoDegree course</h3>
+          <p class="description">This project is aimed at applying what we learned in the first section of the course
+            which is HTML and CSS and using it in real-life events</p>
+          <a href="#articles" class="btn">Discover <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+        <img src="./images/landing-img.svg" alt="Blog illustration" class="image">
+      </div>
+    </div>
+
+    <section class="card-section" id="articles">
       <div class="container">
-        <a href="index.html" class="logo"> MOH blog </a>
-        <div class="mobile-menu">
-          <nav class="navbar">
-            <a href="#" class="nav-item active">Home</a>
-            <a href="#" class="nav-item">Catagotise</a>
-            <a href="#" class="nav-item">Last Articles</a>
-          </nav>
-          <button class="btn">Subscribe</button>
+        <h2 class="section-title">Recent Articles</h2>
+        <div class="card-container">
+          <a href="./pages/html-poster.html">
+            <div class="card">
+              <img src="./images/poster-images/html-poster.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Become a frontend developer</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">5 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pages/css-post.html">
+            <div class="card">
+              <img src="./images/poster-images/programming-poster.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">10 tips to master CSS</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">8 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="./pages/js-post.html">
+            <div class="card">
+              <img src="./images/poster-images/js-poster.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Make your website interactive</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">10 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="index.html">
+            <div class="card">
+              <img src="./images/poster-images/programming-poster-2.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">Skeleton loader with CSS</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">6 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="index.html">
+            <div class="card">
+              <img src="./images/poster-images/coffee-poster.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">A good cup of Coffee</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">10 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="index.html">
+            <div class="card">
+              <img src="./images/poster-images/working-poster.jpg" alt="blog poster" class="card-img">
+              <div class="card-body">
+                <h3 class="card-title">The secret of being on the top</h3>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, sequi voluptatem!
+                  Aperiam ab vero facere repudiandae ipsum reprehenderit eaque, rerum porro ex doloribus, beatae nulla
+                  non
+                  repellendus cumque deserunt earum.</p>
+                <div class="card-bottom">
+                  <span class="reading-time">15 min read</span>
+                  <button class="card-btn">Learn more <i class="icon fa-solid fa-arrow-right-long"></i></button>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </header>
-    <main class="main-content">some text</main>
-    <footer class="footer">
-      &copy; 2022
-      <a
-        href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/personal-blog"
-        class="author"
-        >@MohamedAlosaili</a
-      >
-      All rights reserved
-    </footer>
-  </body>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="container">
+        <h2 class="section-title">Subscribe to our newsletter <br> and never miss an article</h2>
+        <div class="form-container">
+          <form class="form">
+            <input type="email" class="input" placeholder="Email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2022
+    <a href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/personal-blog"
+      class="author">@MohamedAlosaili</a>
+    All rights reserved
+  </footer>
+</body>
+
 </html>
