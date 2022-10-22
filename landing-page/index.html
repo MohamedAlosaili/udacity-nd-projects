@@ -5,14 +5,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS Style -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Landing Page</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo"><span class="primary-color">Dev</span>eloper. &nbsp;</a>
+            <div class="toggler" id="toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-layer"></div>
+            <ul class="nav-list" id="nav-list">
+                <li class="list-item"><a href="" class="nav-link parent-hover-effect active">Home
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a></li>
+                <li class="list-item"><a href="" class="nav-link parent-hover-effect">About me
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a></li>
+                <li class="list-item"><a href="" class="nav-link parent-hover-effect">Product
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a></li>
+                <li class="list-item"><a href="" class="nav-link parent-hover-effect">portfolio
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a></li>
+                <li class="list-item"><a href="" class="nav-link parent-hover-effect">Contact
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main class="main-content" id="main-content">
+        <section class="landing">
+            <div class="container">
+                <section class="info" data-nav="home">
+                    <h3 class="greeting">Hello I'm</h3>
+                    <h1 class="name">Mohamed Abdullah</h1>
+                    <h4>Freelancer & Frontend web developer</h4>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minima cum nemo maxime blanditiis
+                        voluptas esse fugiat, iusto distinctio debitis.
+                    </p>
+                    <button class="btn">Hire me</button>
+                </section>
+                <div class="social-media">
+                    <a href="https:\\www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https:\\www.twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https:\\www.instagram.com" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https:\\www.linkedin.com" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <img src="./images/stand-laptop1.png" alt="" class="landing-img">
+            </div>
+        </section>
+        <section class="about" data-nav="about me">
+            <div class="container">
+                <div class="image-section">
+                    <img src="./images/image.png" class="img" alt="illustration of a man sitting">
+                </div>
+                <section class="text-section">
+                    <h2 class="section-title">About me</h2>
+                    <h3 class="subtitle parent-hover-effect">
+                        Why you hire me!
+                        <div class="hover-effect">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem non in voluptate? Quidem nemo
+                        nulla
+                        ipsum distinctio exercitationem sit praesentium placeat numquam dolor natus minima obcaecati
+                        laborum,
+                        accusantium architecto corporis soluta suscipit. Vitae tenetur eligendi, neque quasi voluptates
+                        dolore
+                        quas optio ipsum numquam minus fuga doloremque, officiis, pariatur similique facere.
+                    </p>
+                    <div class="bar-section">
+                        <div class="skill-container">
+                            <div class="skill-name">
+                                <h3 class="skill-name">HTML</h3>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-name">
+                                <h3 class="skill-name">CSS</h3>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-name">
+                                <h3 class="skill-name">JavaScript</h3>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar"></div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-name">
+                                <h3 class="skill-name">Git</h3>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
 
+    </main>
 
+    <footer class="footer">
+        &copy; <span id="year"></span>
+        <a href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/landing-page" class="author">
+            @MohamedAlosaili
+        </a>
+        All Rights Reserved
+    </footer>
+
+    <!-- JS File -->
     <script src="./js/app.js"></script>
 </body>
 
