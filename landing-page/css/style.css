@@ -378,6 +378,7 @@ a {
 
 .services {
   padding: 5rem 0;
+  background-color: var(--secondary-color);
 }
 
 .services .section-title,
@@ -397,16 +398,101 @@ a {
 .services .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .services .card {
   border: 2px solid #eee;
   border-radius: 0.5rem;
   padding: 1.5rem;
+  transition: 0.3s;
+}
+
+.services .card:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.services .card .icon {
+  display: block;
+  width: 5.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 1.5rem 1.5rem 0 1.5rem;
+  transition: 0.3s;
+}
+
+.services .card:hover .icon {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+.services .card .card-title {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.services .card .text {
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 /* End Service Style */
+
+/* Start Protflio Style */
+
+.protflio {
+  padding: 5rem 0;
+}
+
+.protflio .subtitle {
+  margin-bottom: 3rem;
+}
+
+.protflio .card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.protflio .card-img {
+  height: 18rem;
+  width: 22rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0 0 0 / 0.15);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.protflio .card-img:hover {
+  box-shadow: 0 0 5px rgba(0 0 0 / 0.15);
+}
+
+.protflio .card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.protflio .card-title:hover {
+  color: var(--main-color);
+}
+
+.protflio .describe {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #999;
+}
+
+/* End Protflio Style */
 
 /* Start Media Queries */
 
