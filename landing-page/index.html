@@ -1,326 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
     <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main CSS Style -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Landing Page</title>
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <a href="#" class="logo"
-          ><span class="primary-color">Dev</span>eloper. &nbsp;</a
-        >
-        <div class="toggler" id="toggler">
-          <span></span>
-          <span></span>
-          <span></span>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo"><span class="primary-color">Dev</span>eloper. &nbsp;</a>
+            <div class="toggler" id="toggler">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-layer"></div>
+            <ul class="nav-list" id="nav-list">
+                <!--                 
+                <li class="list-item">
+                    <a href="" class="nav-link parent-hover-effect active">Home
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" class="nav-link parent-hover-effect">About me
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" class="nav-link parent-hover-effect">Product
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" class="nav-link parent-hover-effect">portfolio
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" class="nav-link parent-hover-effect">Contact
+                        <div class="hover-effect">
+                            <span class="one"></span>
+                            <span class="two"></span>
+                            <span class="three"></span>
+                        </div>
+                    </a>
+                </li>
+                 -->
+            </ul>
         </div>
-        <div class="menu-layer"></div>
-        <ul class="nav-list" id="nav-list">
-          <li class="list-item">
-            <a href="" class="nav-link parent-hover-effect active"
-              >Home
-              <div class="hover-effect">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </div>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="" class="nav-link parent-hover-effect"
-              >About me
-              <div class="hover-effect">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </div>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="" class="nav-link parent-hover-effect"
-              >Product
-              <div class="hover-effect">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </div>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="" class="nav-link parent-hover-effect"
-              >portfolio
-              <div class="hover-effect">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </div>
-            </a>
-          </li>
-          <li class="list-item">
-            <a href="" class="nav-link parent-hover-effect"
-              >Contact
-              <div class="hover-effect">
-                <span class="one"></span>
-                <span class="two"></span>
-                <span class="three"></span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <main class="main-content" id="main-content">
-      <section class="landing">
-        <div class="container">
-          <section class="info" data-nav="home">
-            <h3 class="greeting">Hello I'm</h3>
-            <h1 class="name">Mohamed Abdullah</h1>
-            <h4>Freelancer & Frontend web developer</h4>
-            <p class="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-              minima cum nemo maxime blanditiis voluptas esse fugiat, iusto
-              distinctio debitis.
-            </p>
-            <button class="btn">Hire me</button>
-          </section>
-          <div class="social-media">
-            <a href="https:\\www.facebook.com" class="icon"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-            <a href="https:\\www.twitter.com" class="icon"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-            <a href="https:\\www.instagram.com" class="icon"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="https:\\www.linkedin.com" class="icon"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </div>
-          <img src="./images/stand-laptop1.png" alt="" class="landing-img" />
-        </div>
-      </section>
-      <section class="about section" data-nav="about me">
-        <div class="container">
-          <div class="image-section">
-            <img
-              src="./images/image.png"
-              class="img"
-              alt="illustration of a man sitting"
-            />
-          </div>
-          <section class="text-section">
-            <h2 class="section-title">About me</h2>
-            <h3 class="subtitle">
-              Why you hire me!
-              <div class="hover-effect">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-              </div>
-            </h3>
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-              non in voluptate? Quidem nemo nulla ipsum distinctio
-              exercitationem sit praesentium placeat numquam dolor natus minima
-              obcaecati laborum, accusantium architecto corporis soluta
-              suscipit.
-            </p>
-            <div class="bar-section">
-              <div class="skill-container">
-                <div class="skill-info">
-                  <h3>HTML</h3>
-                  <span>80%</span>
+        <section class="landing" data-nav="home">
+            <div class="container">
+                <section class="info">
+                    <h3 class="greeting">Hello I'm</h3>
+                    <h1 class="name">Mohamed Abdullah</h1>
+                    <h4>Freelancer & Frontend web developer</h4>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                        minima cum nemo maxime blanditiis voluptas esse fugiat, iusto
+                        distinctio debitis.
+                    </p>
+                    <button class="btn">Hire me</button>
+                </section>
+                <div class="social-media">
+                    <a href="https:\\www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https:\\www.twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https:\\www.instagram.com" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https:\\www.linkedin.com" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="progress-container">
-                  <div class="progress-bar" style="width: 80%"></div>
+                <img src="./images/stand-laptop1.png" alt="" class="landing-img" />
+            </div>
+        </section>
+        <section class="about section" data-nav="about me">
+            <div class="container">
+                <div class="image-section">
+                    <img src="./images/image.png" class="img" alt="illustration of a man sitting" />
                 </div>
-              </div>
-              <div class="skill-container">
-                <div class="skill-info">
-                  <h3>CSS</h3>
-                  <span>70%</span>
+                <section class="text-section">
+                    <h2 class="section-title">About me</h2>
+                    <h3 class="subtitle">
+                        Why you hire me!
+                        <div class="hover-effect">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                    </h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                        non in voluptate? Quidem nemo nulla ipsum distinctio
+                        exercitationem sit praesentium placeat numquam dolor natus minima
+                        obcaecati laborum, accusantium architecto corporis soluta
+                        suscipit.
+                    </p>
+                    <div class="bar-section">
+                        <div class="skill-container">
+                            <div class="skill-info">
+                                <h3>HTML</h3>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-info">
+                                <h3>CSS</h3>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-info">
+                                <h3>JavaScript</h3>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-container">
+                            <div class="skill-info">
+                                <h3>Git</h3>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="services section" data-nav="services">
+            <div class="container">
+                <h2 class="section-title">Service</h2>
+                <h3 class="subtitle">
+                    Service Provide
+                    <div class="hover-effect">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </h3>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="icon fa-solid fa-server"></i>
+                        <h3 class="card-title">Hosting</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                            laudantium eius iure aliquam est assumenda.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon fa-brands fa-square-js"></i>
+                        <h3 class="card-title">JavaScript</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                            laudantium eius iure aliquam est assumenda.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon fa-brands fa-css3-alt"></i>
+                        <h3 class="card-title">CSS Animation</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                            aperiam ab distinctio totam harum tenetur!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon fa-solid fa-bullhorn"></i>
+                        <h3 class="card-title">SEO Markting</h3>
+                        <p class="text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            saepe ratione sapiente quae eos consequatur?
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon fa-solid fa-code"></i>
+                        <h3 class="card-title">Manage Code</h3>
+                        <p class="text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Suscipit esse, repudiandae odio earum itaque libero.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon fa-solid fa-bug"></i>
+                        <h3 class="card-title">Debugging</h3>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                            repellendus numquam asperiores, consectetur inventore id.
+                        </p>
+                    </div>
                 </div>
-                <div class="progress-container">
-                  <div class="progress-bar" style="width: 70%"></div>
+            </div>
+        </section>
+        <section class="protflio section" data-nav="portfolio">
+            <div class="container">
+                <h2 class="section-title">Portfolio</h2>
+                <h3 class="subtitle">
+                    Latest Project
+                    <div class="hover-effect">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="https://cdn.dribbble.com/userupload/3364648/file/original-822401b3055c1d257d2c18a76ab29644.png"
+                            alt="" class="card-img" />
+                        <h3 class="card-title">Landing Page</h3>
+                        <p class="describe">HTML / CSS / JS</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.dribbble.com/userupload/3344673/file/original-b01565c84ca47348def794c1b39a08ab.png?compress=1&resize=1024x768"
+                            alt="" class="card-img" />
+                        <h3 class="card-title">SEO Markting</h3>
+                        <p class="describe">Markting</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://cdn.dribbble.com/userupload/3671647/file/original-09add3ed7a76d9fb1c0479d749fad315.jpg?compress=1&resize=1024x768"
+                            alt="" class="card-img" />
+                        <h3 class="card-title">Home Page</h3>
+                        <p class="describe">Web Design</p>
+                    </div>
                 </div>
-              </div>
-              <div class="skill-container">
-                <div class="skill-info">
-                  <h3>JavaScript</h3>
-                  <span>75%</span>
+            </div>
+        </section>
+        <section class="contact section" data-nav="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <h3 class="subtitle">
+                    Reach me on
+                    <div class="hover-effect">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
+                </h3>
+                <div class="social-media">
+                    <h3 class="title">Social Media</h3>
+                    <a href="https:\\www.facebook.com" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https:\\www.twitter.com" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https:\\www.instagram.com" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https:\\www.linkedin.com" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
-                <div class="progress-container">
-                  <div class="progress-bar" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill-container">
-                <div class="skill-info">
-                  <h3>Git</h3>
-                  <span>60%</span>
-                </div>
-                <div class="progress-container">
-                  <div class="progress-bar" style="width: 60%"></div>
-                </div>
-              </div>
+                <form class="contact-form">
+                    <i class="icon fa-solid fa-envelope"></i>
+                    <input type="text" class="input" placeholder="Your Name">
+                    <input type="email" class="input" placeholder="Email">
+                    <input type="text" class="input" placeholder="Subject">
+                    <textarea class="textarea input" placeholder="Message"></textarea>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
             </div>
-          </section>
-        </div>
-      </section>
-      <section class="services section" data-nav="services">
-        <div class="container">
-          <h2 class="section-title">Service</h2>
-          <h3 class="subtitle">
-            Service Provide
-            <div class="hover-effect">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </h3>
-          <div class="card-container">
-            <div class="card">
-              <i class="icon fa-solid fa-server"></i>
-              <h3 class="card-title">Hosting</h3>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                laudantium eius iure aliquam est assumenda.
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon fa-brands fa-square-js"></i>
-              <h3 class="card-title">JavaScript</h3>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-                laudantium eius iure aliquam est assumenda.
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon fa-brands fa-css3-alt"></i>
-              <h3 class="card-title">CSS Animation</h3>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
-                aperiam ab distinctio totam harum tenetur!
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon fa-solid fa-bullhorn"></i>
-              <h3 class="card-title">SEO Markting</h3>
-              <p class="text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-                saepe ratione sapiente quae eos consequatur?
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon fa-solid fa-code"></i>
-              <h3 class="card-title">Manage Code</h3>
-              <p class="text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit esse, repudiandae odio earum itaque libero.
-              </p>
-            </div>
-            <div class="card">
-              <i class="icon fa-solid fa-bug"></i>
-              <h3 class="card-title">Debugging</h3>
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                repellendus numquam asperiores, consectetur inventore id.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="protflio section" data-nav="projects">
-        <div class="container">
-          <h2 class="section-title">Portfolio</h2>
-          <h3 class="subtitle">
-            Latest Project
-            <div class="hover-effect">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </h3>
-          <div class="card-container">
-            <div class="card">
-              <img
-                src="https://cdn.dribbble.com/userupload/3364648/file/original-822401b3055c1d257d2c18a76ab29644.png"
-                alt=""
-                class="card-img"
-              />
-              <h3 class="card-title">Landing Page</h3>
-              <p class="describe">HTML / CSS / JS</p>
-            </div>
-            <div class="card">
-              <img
-                src="https://cdn.dribbble.com/userupload/3344673/file/original-b01565c84ca47348def794c1b39a08ab.png?compress=1&resize=1024x768"
-                alt=""
-                class="card-img"
-              />
-              <h3 class="card-title">SEO Markting</h3>
-              <p class="describe">Markting</p>
-            </div>
-            <div class="card">
-              <img
-                src="https://cdn.dribbble.com/userupload/3671647/file/original-09add3ed7a76d9fb1c0479d749fad315.jpg?compress=1&resize=1024x768"
-                alt=""
-                class="card-img"
-              />
-              <h3 class="card-title">Home Page</h3>
-              <p class="describe">Web Design</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact section" data-nav="contact">
-        <div class="container">
-          <h2 class="section-title">Contact</h2>
-          <h3 class="subtitle">
-            Reach me on
-            <div class="hover-effect">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </h3>
-        </div>
-      </section>
+        </section>
     </main>
 
     <footer class="footer">
-      &copy; <span id="year"></span>
-      <a
-        href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/landing-page"
-        class="author"
-      >
-        @MohamedAlosaili
-      </a>
-      All Rights Reserved
+        &copy; <span id="year">2022</span>
+        <a href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/landing-page" class="author">
+            @MohamedAlosaili
+        </a>
+        All Rights Reserved
     </footer>
 
     <!-- JS File -->
     <script src="./js/app.js"></script>
-  </body>
+</body>
+
 </html>
