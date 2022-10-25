@@ -9,3 +9,4 @@
 | Source                                                                                          | Live                                                                                   |
 | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | [Personal Blog](https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/personal-blog) | [Demo](https://mohamedalosaili.github.io/udacity-nd-projects/personal-blog/index.html) |
+| [Landing Page](https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/landing-page)   | [Demo](https://mohamedalosaili.github.io/udacity-nd-projects/landing-page/index.html)  |
