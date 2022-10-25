@@ -70,22 +70,25 @@ function linkesListener(e) {
  * @description Map Over the sections and create a nav item depending on data-nav property and append it to navList
  */
 function createNavList() {
+  const navListFrg = document.createDocumentFragment("ul");
   sections.forEach((section) => {
-    const listItem = (name) => `
-          <li class="list-item">
-              <a href="#" class="nav-link parent-hover-effect" data-section="${name}">
-              ${name}
-              <div class="hover-effect">
-              <span class="one"></span>
-              <span class="two"></span>
-              <span class="three"></span>
-              </div>
-              </a>
-              </li>
-              `;
+    const item = document.createElement("li");
+    const name = section.dataset.nav;
 
-    navList.insertAdjacentHTML("beforeend", listItem(section.dataset.nav));
+    item.innerHTML = `
+            <a href="#" class="nav-link parent-hover-effect" data-section="${name}">
+            ${name}
+                <div class="hover-effect">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </div>
+            </a>
+    `;
+
+    navListFrg.append(item);
   });
+  navList.append(navListFrg);
 }
 
 /**
