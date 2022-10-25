@@ -55,6 +55,42 @@ a {
   }
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  background-color: var(--main-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(2rem);
+  box-shadow: 0 0 10px 5px rgba(0 0 0 / 0.1);
+  transition: 0.3s;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0rem);
+}
+
+.scroll-to-top .icon:first-child {
+  margin-bottom: -0.25rem;
+}
+
+.scroll-to-top .icon:last-child {
+  margin-top: -0.25rem;
+}
+
 .parent-hover-effect:hover .hover-effect,
 .parent-hover-effect.active .hover-effect {
   width: 100%;
@@ -130,6 +166,16 @@ a {
   height: 4.5rem;
   background-color: var(--main-color);
   box-shadow: 0 2px 15px rgba(0 0 0 / 0.2);
+}
+
+.header .scroll-bar {
+  position: absolute;
+  bottom: -0.3rem;
+  left: 0;
+  background-color: var(--main-color);
+  width: 0;
+  height: 0.3rem;
+  transition: 0.15s;
 }
 
 .header .container {
