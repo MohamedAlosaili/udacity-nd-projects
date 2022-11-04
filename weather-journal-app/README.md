@@ -14,7 +14,7 @@ To test the project on your local Machine you need to follow these steps:
 
 First of all, you need to have nodejs on your machine if you haven't, download it from here [here](https://nodejs.org/en/)
 
-> First: Clone the project by past this line in the directory
+> First: Clone the project by pasting this line in the terminal of the directory folder
 
 ```
     git clone https://github.com/MohamedAlosaili/udacity-nd-projects.git
