@@ -1,3 +1,4 @@
-body {
-    background-color: darkcyan;
-}
+@use 'base';
+@use 'header';
+@use 'body';
+@use 'footer';

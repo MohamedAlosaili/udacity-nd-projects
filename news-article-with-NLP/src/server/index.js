@@ -37,17 +37,17 @@ app.post("/callMeaningApi", async (req, res) => {
   res.send({ response });
 });
 
-async function getMeaningAnalysis(txt) {
+async function getMeaningAnalysis(text) {
   const form = new FormData();
   form.append("key", API_KEY);
   form.append("lang", "en");
-  form.append("txt", txt);
+  form.append("txt", text);
 
   return await fetch("https://api.meaningcloud.com/sentiment-2.1", {
     method: "POST",
     body: form,
   })
     .then((res) => res.json())
-    .then((data) => data)
+    .then((data) => ({ ...data, text }))
     .catch((e) => console.log(e));
 }

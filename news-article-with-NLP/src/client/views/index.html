@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Article with NLP</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <h1 class="title">News Article With NLP</h1>
+      <h3 class="subtitle">Udacity ND Program - Project 4</h3>
+    </header>
 
+    <main class="main-content">
+      <section class="form">
+        <h2 class="title">Enter a text to be analyzed</h2>
+        <form onsubmit="return Client.handleSubmit(event)">
+          <textarea id="textarea" class="textarea"></textarea>
+          <button class="btn">Submit</button>
+        </form>
+      </section>
 
-    <form onsubmit="return Client.handleSubmit(event)">
-        <textarea id="textarea"></textarea>
-        <button>Submit</button>
-    </form>
+      <section class="result" id="result"></section>
+    </main>
 
-
-</body>
-
+    <footer class="footer">
+      <a
+        class="source"
+        href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/news-article-with-NLP"
+        >@MohamedAlosaili</a
+      >
+    </footer>
+  </body>
 </html>
