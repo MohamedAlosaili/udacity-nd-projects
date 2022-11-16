@@ -1,6 +1,6 @@
 # Front End Nanodegree Program
 
-## News Article With NLP
+## Evaluate a News Article with NLP
 
 ## Description
 
