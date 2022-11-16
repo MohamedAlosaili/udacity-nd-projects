@@ -2,14 +2,108 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;;
     box-sizing: border-box;
 }
+
+$main-bg-color: #232946;
+$secondary-bg-color: #d4d8f0;
+$third-bg-color: #fffffe;
+$text-color: #121629;
+$text-color-alt: #b8c1ec;
+$btn-color: #eebbc3; 
+$btn-text: #232946; 
 
 body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     min-height: 100vh;
-    font-family: 'Inter', sans-serif;
-    background-color: darkcyan;
+    background-color: $main-bg-color;
+}
+
+%pseudo-elements {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    animation: none;
+}
+
+.loader-spinner {
+    position: fixed;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    background-color: $btn-color;
+    color: #fff;
+    transition: 0.5s  1s;
+    
+    &.active {
+        transition-delay: 0s;
+        top: 1rem;
+    }
+
+    &::before {
+        content: "";
+        @extend %pseudo-elements;
+        left: 4rem;
+        height: 1.3rem;
+        width: 1.3rem;
+        border: 0.2rem solid #fff;
+        border-radius: 50%;
+        background-color: #fff;
+    }
+    
+    &.active::before {
+        background-color: transparent;
+        border-top-color: transparent;
+        animation: routing 0.8s linear infinite;
+    }
+
+    &::after {
+        content: "Analyzing completed";
+        @extend %pseudo-elements;
+        left: 6rem;
+    }
+    
+    &.active::after {
+        animation: loading 1s infinite;
+    }
+}
+
+@keyframes loading {
+    0% {
+        content: "Analyzing";
+    }
+    15% {
+        content: "Analyzing .";
+    }
+    30% {
+        content: "Analyzing . .";
+    }
+    60% {
+        content: "Analyzing . . .";
+    }
+    75% {
+        content: "Analyzing . .";
+    }
+    90% {
+        content: "Analyzing .";
+    }
+    100% {
+        content: "Analyzing";
+    }
+}
+
+@keyframes routing {
+    0% {
+        transform: translateY(-50%) rotate(0);
+    }
+    100% {
+        transform: translateY(-50%) rotate(1turn);
+    }
 }

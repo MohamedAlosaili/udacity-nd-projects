@@ -1,8 +1,30 @@
 .footer {
     text-align: center;
+    background-color: $secondary-bg-color;
+    color: $text-color;
+    box-shadow: 0 0 15px rgba($text-color-alt, 0.2);
+    padding: 1rem;
+    font-size: 0.9rem;
 
     .source {
-        font-size: 0.9rem;
-        padding: 1rem;
+        text-decoration: none;
+        position: relative;
+        font-weight: 500;
+        color: $text-color;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.2rem;
+            left: 0;
+            width: 0;
+            height: .15rem;
+            background-color: $text-color;
+            transition: 0.3s;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
     }
 }

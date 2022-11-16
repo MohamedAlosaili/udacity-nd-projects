@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 1rem;
+    background-color: $secondary-bg-color;
+    color: $text-color;
+    box-shadow: 0 0 15px rgba($text-color-alt, 0.2);
 
     .title {
         font-size: 1.5rem;

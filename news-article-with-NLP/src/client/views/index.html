@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Article with NLP</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <h1 class="title">News Article With NLP</h1>
-      <h3 class="subtitle">Udacity ND Program - Project 4</h3>
+        <h1 class="title">News Article With NLP</h1>
+        <h3 class="subtitle">Udacity ND Program - Project 4</h3>
     </header>
 
-    <main class="main-content">
-      <section class="form">
-        <h2 class="title">Enter a text to be analyzed</h2>
-        <form onsubmit="return Client.handleSubmit(event)">
-          <textarea id="textarea" class="textarea"></textarea>
-          <button class="btn">Submit</button>
-        </form>
-      </section>
+    <div class="loader-spinner" id="loader"></div>
 
-      <section class="result" id="result"></section>
+    <main class="main-content">
+        <section class="form-container">
+            <h2 class="title">Enter a text to be analyzed</h2>
+            <form class="form" onsubmit="return Client.handleSubmit(event)">
+                <textarea id="textarea" class="textarea" placeholder="Enter your text" required></textarea>
+                <button class="btn">Submit</button>
+            </form>
+        </section>
+
+        <section class="result-container">
+            <h2 class="title">Results</h2>
+            <div class="result" id="result"></div>
+        </section>
     </main>
 
     <footer class="footer">
-      <a
-        class="source"
-        href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/news-article-with-NLP"
-        >@MohamedAlosaili</a
-      >
+        <a class="source"
+            href="https://github.com/MohamedAlosaili/udacity-nd-projects/tree/main/news-article-with-NLP">@MohamedAlosaili</a>
     </footer>
-  </body>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
 </html>

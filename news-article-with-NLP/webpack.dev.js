@@ -10,7 +10,7 @@ module.exports = {
     library: "Client",
   },
   mode: "development",
-  devtool: "source-map",
+  //   devtool: "source-map",
   module: {
     rules: [
       {

@@ -1,31 +1,23 @@
-function handleSubmit(event) {
+const loader = document.getElementById("loader");
+
+export function handleSubmit(event) {
   event.preventDefault();
 
   const textArea = document.getElementById("textarea");
-  console.log(":: HandleSubmit ::");
+  console.log("HandleSubmit Fire");
+
+  if (+textArea.value === 0) {
+    alert("You must enter a valid text");
+    return false; // For Testing
+  }
+
+  loader.classList.add("active");
 
   const bodyValue = {
     text: textArea.value,
   };
 
-  (async function () {
-    const res = await fetch("http://localhost:3000/callMeaningApi", {
-      method: "POST",
-      credentials: "same-origin",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify(bodyValue),
-    });
+  Client.sendToServer(bodyValue);
 
-    try {
-      const data = await res.json();
-
-      console.log(data);
-    } catch (e) {
-      console.log(e);
-    }
-  })();
+  return true; // For Testing
 }
-
-export { handleSubmit };
