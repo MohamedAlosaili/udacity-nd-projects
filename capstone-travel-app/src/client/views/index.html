@@ -11,7 +11,23 @@
 <body>
 
 
-
+    <main>
+        <form class="form" id="form">
+            <label for="location">
+                location:
+                <input type="text" id="location" placeholder="location you want to go to" required>
+            </label>
+            <label for="date">
+                date:
+                <input type="date" id="date" min="2022-12-10" max="2022-12-20" required>
+            </label>
+            <label for="days">
+                days
+                <input type="number" id="days" placeholder="How many days" min="1" required>
+            </label>
+            <button>Search</button>
+        </form>
+    </main>
 
     <!-- Service Worker -->
     <script>
