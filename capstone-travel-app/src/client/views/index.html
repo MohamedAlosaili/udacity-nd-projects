@@ -10,34 +10,56 @@
 
 <body>
 
+    <header class="header">
+        <h1 class="logo">Flightie</h1>
+    </header>
 
-    <main>
-        <form class="form" id="form">
-            <label for="location">
-                location:
-                <input type="text" id="location" placeholder="location you want to go to" required>
-            </label>
-            <label for="date">
-                date:
-                <input type="date" id="date" min="2022-12-10" max="2022-12-20" required>
-            </label>
-            <label for="days">
-                days
-                <input type="number" id="days" placeholder="How many days" min="1" required>
-            </label>
-            <button>Search</button>
-        </form>
+    <main class="app">
+        <p class="describtion">
+            Flightie helps you discover your next destination
+        </p>
+
+        <nav class="nav" id="nav">
+            <button class="btn active" data-nav-btn>Search</button>
+            <button class="btn" data-nav-btn>Result</button>
+        </nav>
+
+        <div id="container">
+            <form class="form" id="form">
+                <label for="select"></label>
+                <label for=" location">
+                    location:
+                    <input type="text" class="input" id="location" placeholder="Where are you going" required>
+                </label>
+                <label for="start-date">
+                    From:
+                    <input type="date" class="input" id="start-date" required>
+                </label>
+                <label for="end-date">
+                    To:
+                    <input type="date" class="input" id="end-date" required>
+                </label>
+                <button class="btn">Search</button>
+            </form>
+
+            <dev id="result" class="result">
+                <!-- Search Reault -->
+                <span class="placeholder">No result yet</span>
+            </dev>
+        </div>
     </main>
 
     <!-- Service Worker -->
     <script>
-        // Check that service workers are supported
-        if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performant
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-        }
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js')
+                // .then(() => console.log("Service Worker Registered!")) check if service worker work
+                // .catch(error => console.warn(error))
+            }
+        });
     </script>
 </body>
 

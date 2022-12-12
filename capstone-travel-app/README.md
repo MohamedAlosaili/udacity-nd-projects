@@ -26,24 +26,28 @@ Follow these steps to setup the app.
    if you haven't, you can install it from here [nodejs](https://nodejs.org/en/)
    **Make sure to use version @12.13.1** wich I used. to run it without errors
 
-2. Create account in [MeaningCloud](https://www.meaningcloud.com/developer/login) and get the License Key
-
-3. Clone the project using this command
+2. Clone the project using this command
 
    ```
    git clone https://github.com/MohamedAlosaili/udacity-nd-projects.git
    ```
 
-4. Download the dependencies
+3. Download the dependencies
 
    ```
    npm install
    ```
 
-5. Before running the app you need to create .env file in the root directory 'news-article-with-NLP/.env'.
-   Create a API_KEY variable and assigned the license Key from [MeaningCloud](https://www.meaningcloud.com/developer/login) to it.
+4. Before running the app you need to create _.env_ file in the root directory 'capstone-travel-app/.env'.
+   Create those variables
 
-6. Last step is to run the app in developemnt mode useing this command
+   ```
+   WEATHER='key' from https://www.weatherbit.io/
+   GEONAME='username' from https://www.geonames.org/
+   PIXABAY='key' from https://pixabay.com/service/about/api/
+   ```
+
+5. Last step is to run the app in developemnt mode useing this command
    ```
    npm run dev
    ```
