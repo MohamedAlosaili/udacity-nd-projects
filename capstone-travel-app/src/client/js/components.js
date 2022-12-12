@@ -97,7 +97,7 @@ export function createPreviousQueries() {
     selectLabel.style.display = "flex";
     const selectFragment = document.createDocumentFragment("div");
     const select = document.createElement("select");
-    const labelText = document.createTextNode("See previous results: ");
+    const labelText = document.createTextNode("Previous results: ");
     let children = `<option value=""> -- choose a result -- </option>`;
 
     queries.forEach(
