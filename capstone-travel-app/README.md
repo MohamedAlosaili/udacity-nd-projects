@@ -47,7 +47,13 @@ Follow these steps to setup the app.
    PIXABAY='key' from https://pixabay.com/service/about/api/
    ```
 
-5. Last step is to run the app in developemnt mode useing this command
+5. Run the server in separate terminal window
+
    ```
-   npm run dev
+   npm run server
+   ```
+
+6. Last step is to run the app in developemnt mode useing this command
+   ```
+   npm run build-dev
    ```
