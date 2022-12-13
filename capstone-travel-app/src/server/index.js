@@ -26,14 +26,20 @@ app.listen(PORT, () => {
   console.log(`###___ Server running on PORT: ${PORT} ___###`);
 });
 
-const { WEATHER, GEONAME, PIXABAY } = process.env;
+// const { WEATHER, GEONAME, PIXABAY } = process.env;
+
+/* Keys Shown in the repository for review purposes */
+const WEATHER = "603d4269aed544d592234681f36d47ee";
+const GEONAME = "m0hamed";
+const PIXABAY = "31951857-2212fe3874b9278d3dfdd7a0f";
+
 const API_URL = {
   WEATHER: ({ lat, lng }) =>
     `https://api.weatherbit.io/v2.0/forecast/daily?key=${WEATHER}&lat=${lat}&lon=${lng}`,
   GEONAME: ({ location }) =>
     `http://api.geonames.org/searchJSON?name_equals=${location}&username=${GEONAME}`,
   PIXABAY: ({ location }) =>
-    `https://pixabay.com/api/?key=${PIXABAY}&q=${location}&category=places,travel,buildings&orientation=vertical&image_type=photo`,
+    `https://pixabay.com/api/?key=${PIXABAY}&q=${location}&category=places,travel,buildings&orientation=horizontal&image_type=photo`,
 };
 
 // Handle request from front-end

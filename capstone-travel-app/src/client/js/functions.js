@@ -19,7 +19,7 @@ export async function showResult({ location, startDate, endDate }) {
       apiName: "GEONAME",
     });
 
-    const { lat, lng } = coordinate.geonames[0];
+    const { lat, lng } = coordinate?.geonames[0];
 
     const [weather, image] = await Promise.all([
       getDataFromServer({
